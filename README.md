@@ -39,7 +39,7 @@ Storage data for proposal is removed. To clean storage for votes per user, call 
 #### State changes
 
 For simplification is considered users u1 and u2 and one proposal at time (implementation allows for many proposal at the same time)
-
+```
 Action                                        State
                       | proposal, proposal owner reserved balance, votes count | user locked balance |
 Initial state         | --      , --                             , --          | --                  |                      |
@@ -49,7 +49,7 @@ UnVote(u2)         -> | 1       , u1                             , --          |
 Vote(u2,2)         -> | 1       , u1                             , 2           | 4                   |
 Close proposal     -> | --      , --                             , --          | 4                   |
 Unlock balance(u2) -> | --      , --                             , --          | --                  |
-
+```
 Call "start_proposal" adds new proposal for which is associated proposal index, as a handle to operate on proposal.
 On proposal owner account is reserved balance, which can be slashed when proposal is bad. When proposal is successfull
 event is emited
