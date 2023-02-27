@@ -1,5 +1,8 @@
 # Quadratic Voting
 
+## Assignment definition
+Assignment is defined in ASSIGNMENT.md
+
 ## Overview
 
 The Voting pallets allows users for quadratic voting for proposals.
